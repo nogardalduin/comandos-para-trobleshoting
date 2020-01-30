@@ -1,0 +1,19 @@
+show vlan brief 
+show vlan id (numero o numero de vlan)
+show vlan id vlan 10 
+
+COMANDOS DE TROBLESHOOTING 
+VERIFICAR VLANs CRIADAS 
+
+#show interface fasthethernet 0/1 switchport(verificar se a porta esta em modo de acesso e na vlan correta)
+#show interface fasthethernet 0/4 switchport(verificar se a porta esta em modo de acesso e na vlan correta)
+
+CONFIGURAR PORTAS SEGUDAS 1 AO 3 NO SWITCH 2960 
+
+(config)#interface range fastethernet 0/1-3
+(config)#interface range fastethernet 0/4-6
+
+switchport trunk allowed vlan add 10 
+show interface (numero da interface) switchport
+no ip access-group http out
+no ip access-group dns out
