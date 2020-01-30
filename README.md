@@ -1,1 +1,1 @@
-# comandos-para-trobleshoting
+# comandos-para-trobleshooting
